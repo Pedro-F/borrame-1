@@ -16,10 +16,10 @@ MAINTAINER Pedro F. Alonso <pedro.alonso.garcia@accenture.com>
 #RUN echo "$TIME_ZONE" > /etc/timezone
 #RUN dpkg-reconfigure -f noninteractive tzdata
 
-COPY app.jar /app/app.jar
+#COPY app.jar /app/app.jar
 RUN mvn package && java -jar target/gs-spring-boot-0.1.0.jar
-
-#WORKDIR /app
+COPY target/gs-spring-boot-0.1.0.jar /app/gs-spring-boot-0.1.0.jar
+WORKDIR /app
 
 EXPOSE 8080
 
