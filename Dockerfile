@@ -1,9 +1,9 @@
 FROM java:8-jdk
 MAINTAINER Pedro F. Alonso <pedro.alonso.garcia@accenture.com>
 
-#ENV JAVA_HOME              /usr/lib/jvm/java-8-openjdk-amd64
-#ENV JAVA_OPTS              ""
-#ENV PATH                   $PATH:$JAVA_HOME/bin
+ENV JAVA_HOME              /usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_OPTS              ""
+ENV PATH                   $PATH:$JAVA_HOME/bin
 
 #ENV TIME_ZONE              Europe/Madrid
 #ENV CUSTOM_LOCAL_NAME      unknown-host
