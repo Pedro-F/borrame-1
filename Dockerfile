@@ -18,9 +18,9 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 
 #COPY https://github.com/Pedro-F/meccano.git /app/app.jar
 
-ADD https://github.com/Pedro-F/meccano/blob/master/MicroservicioA/target/MicroservicioA-0.0.1-SNAPSHOT.jar /app/gs-spring-boot-0.1.0.jar
+ADD https://github.com/Pedro-F/meccano/blob/master/MicroservicioA/target/MicroservicioA-0.0.1-SNAPSHOT.jar /app/MicroservicioA-0.0.1-SNAPSHOT.jar
 WORKDIR /app
 
 EXPOSE 5080
 
-CMD ["/bin/sh", "-c", "java $JAVA_OPTS -DCUSTOM_LOCAL_NAME=$CUSTOM_LOCAL_NAME -jar /app/app.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
+CMD ["/bin/sh", "-c", "java $JAVA_OPTS -DCUSTOM_LOCAL_NAME=$CUSTOM_LOCAL_NAME -jar /app/MicroservicioA-0.0.1-SNAPSHOT.jar --spring.profiles.active=$SPRING_PROFILES_ACTIVE"]
