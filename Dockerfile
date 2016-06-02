@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM java:8-jdk
 MAINTAINER Pedro F. Alonso <pedro.alonso.garcia@accenture.com>
 VOLUME /tmp
 ADD MicroservicioA-0.0.1.jar app.jar
