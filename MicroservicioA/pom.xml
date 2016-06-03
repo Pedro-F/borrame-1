@@ -46,6 +46,7 @@
 					<resources>
 						<resource>
 							<!-- PA: PORQUE EN GUINDOUS NO HACE FALTA <targetPath>/</targetPath> -->
+							<targetPath></targetPath>
 							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar</include>
 						</resource>

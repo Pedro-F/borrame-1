@@ -4,4 +4,4 @@ VOLUME /tmp
 ADD https://github.com/Pedro-F/meccano/blob/master/MicroservicioA/target/MicroservicioA-0.0.1.jar app.jar
 RUN sh -c 'touch /app.jar'
 EXPOSE 8080
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
