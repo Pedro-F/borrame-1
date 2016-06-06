@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @EnableAutoConfiguration
 
+//Comentario de pruebas
 public class MicroservicioA {
 
 	@RequestMapping("/")
